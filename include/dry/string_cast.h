@@ -13,6 +13,13 @@
 
 namespace dry {
 
+inline std::string_view CastToStringView(const char* ptr) {
+  if (nullptr == ptr) {
+    return std::string_view{ptr, 0};
+  }
+  return std::string_view{ptr};
+}
+
 inline std::string_view CastToStringView(std::u8string_view utf8) {
   return std::string_view{reinterpret_cast<const char*>(utf8.data()),
                           utf8.size()};
