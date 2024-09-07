@@ -1,4 +1,15 @@
-﻿#pragma once
+﻿//*********************************************************
+//
+//  Copyright (c) RegameDesk. All rights reserved.
+//  This code is licensed under the MIT License.
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+//  ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+//  TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+//  PARTICULAR PURPOSE AND NONINFRINGEMENT.
+//
+//*********************************************************
+
+#pragma once
 
 #include <cstddef>
 #include <type_traits>
