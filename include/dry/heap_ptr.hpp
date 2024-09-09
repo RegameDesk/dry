@@ -24,6 +24,9 @@ class HeapPtr : public std::vector<std::byte> {
   T& operator*() noexcept { return *Ptr(); }
   const T& operator*() const noexcept { return *Ptr(); }
 
+  const T* Get() const noexcept { return Ptr(); }
+  T* Put() noexcept { return Ptr(); }
+
  private:
   T* Ptr() noexcept { return reinterpret_cast<T*>(__super::data()); }
   const T* Ptr() const noexcept {
