@@ -3,6 +3,7 @@
 #include <format>
 #include <iostream>
 
+#include "dry/enum_name.h"
 #include "dry/types.h"
 
 int main() {
@@ -10,6 +11,7 @@ int main() {
   Status status{kOpening};
   // std::cout << std::format("status = {}\n", status);
   std::cout << std::format("status = {}\n", dry::EnumToInt(status));
+  std::cout << std::format("status = {}\n", dry::EnumName(status));
 
   int i{};
   int* p = &i;
